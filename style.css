@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 400px;
+    padding: 20px;
+    border-radius: 11px;
+}
+
+header {
+    /* text-align: center; */
+    font-size: 40px;
+    margin-left: 19px;
+    display: inline;
+    margin-right: 9px;
+}
+
+.dy-text {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.effect {
+    position: absolute;
+    /* top: 184px; */
+    /* left: 753px; */
+    background: purple;
+    /* width: 200px; */
+    animation: effect 1.5s linear;
+    display: inline;
+}
+
+@keyframes effect {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 192px;
+    }
+}
+
+.url-input {
+    font-size: 10px;
+    margin-top: 35px;
+}
+
+.url-input input {
+    width: 250px;
+    width: 400px;
+    outline: none;
+    height: 30px;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 2px solid rgb(77, 77, 77);
+}
+
+.hr-line {
+    height: 3px;
+    background-color: red;
+    transform: scale(0);
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.url-input input:focus~.hr-line {
+    transform: scale(1);
+}
+
+.preview {
+    border: 2px solid greenyellow;
+    text-align: center;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fa-cloud-arrow-down {
+    font-size: 109px;
+}
+
+.preview img {
+    width: 100%;
+    display: none;
+}
+
+.download-field {
+    text-align: center;
+}
+
+.downloadBtn {
+    color: #fff;
+    height: 53px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 30px 0 20px 0;
+    border-radius: 5px;
+    background: #7D2AE8;
+    pointer-events: none;
+}
