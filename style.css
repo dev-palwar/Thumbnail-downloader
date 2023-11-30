@@ -116,3 +116,7 @@ header {
     background: #7D2AE8;
     pointer-events: none;
 }
+
+.h1{
+    margin-bottom: 1rem;
+}
